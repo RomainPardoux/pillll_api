@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ 5y3t0_rpardoux@5y3t0.ftp.infomaniak.com:~/pillll --include=public/build --include=vendor --include=.htaccess --exclude-from=.gitignore --exclude=".*"
