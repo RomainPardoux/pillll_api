@@ -14,7 +14,7 @@ class InfoImportanteController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/infosImportantes/{id}",
+     *     path = "/api/infosImportantes/{id}",
      *     name = "info_Importante_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -27,7 +27,7 @@ class InfoImportanteController extends Controller
 
 
     /**
-     * @Rest\Get("/infosImportantes", name="info_importante_list")
+     * @Rest\Get("/api/infosImportantes", name="info_importante_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The info importante to search for."

@@ -14,7 +14,7 @@ class PresentationController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/presentations/{id}",
+     *     path = "/api/presentations/{id}",
      *     name = "presentation_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -27,7 +27,7 @@ class PresentationController extends Controller
 
     /**
      * @Rest\Get(
-     *     path = "/presentations/codecip7/{codeCip7}",
+     *     path = "/api/presentations/codecip7/{codeCip7}",
      *     name = "codecip7_presentation_show",
      *     requirements = {"codeCip7"="\d+"}
      * )
@@ -40,7 +40,7 @@ class PresentationController extends Controller
 
     /**
      * @Rest\Get(
-     *     path = "/presentations/codecip13/{codeCip13}",
+     *     path = "/api/presentations/codecip13/{codeCip13}",
      *     name = "codecip13_presentation_show",
      *     requirements = {"codeCip13"="\d+"}
      * )
@@ -52,7 +52,7 @@ class PresentationController extends Controller
     }
 
     /**
-     * @Rest\Get("/presentations", name="presentation_list")
+     * @Rest\Get("/api/presentations", name="presentation_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The presentation to search for."

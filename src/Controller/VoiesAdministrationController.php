@@ -14,7 +14,7 @@ class VoiesAdministrationController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/voiesAdministrations/{id}",
+     *     path = "/api/voiesAdministrations/{id}",
      *     name = "voiesAdministration_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class VoiesAdministrationController extends Controller
     }
 
     /**
-     * @Rest\Get("/voiesAdministrations", name="voies_administration_list")
+     * @Rest\Get("/api/voiesAdministrations", name="voies_administration_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The voies administration to search for."

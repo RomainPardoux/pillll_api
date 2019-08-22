@@ -14,7 +14,7 @@ class CompositionController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/compositions/{id}",
+     *     path = "/api/compositions/{id}",
      *     name = "composition_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class CompositionController extends Controller
     }
 
     /**
-     * @Rest\Get("/compositions", name="composition_list")
+     * @Rest\Get("/api/compositions", name="composition_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The composition to search for."

@@ -14,7 +14,7 @@ class ConditionPrescriptionController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/conditionsPrescriptions/{id}",
+     *     path = "/api/conditionsPrescriptions/{id}",
      *     name = "conditionPrescription_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class ConditionPrescriptionController extends Controller
     }
 
         /**
-     * @Rest\Get("/conditionsPrescriptions", name="condition_prescription_list")
+     * @Rest\Get("/api/conditionsPrescriptions", name="condition_prescription_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The condition prescription to search for."

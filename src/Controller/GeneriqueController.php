@@ -14,7 +14,7 @@ class GeneriqueController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/generiques/{id}",
+     *     path = "/api/generiques/{id}",
      *     name = "generique_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class GeneriqueController extends Controller
     }
 
         /**
-     * @Rest\Get("/generiques", name="generique_list")
+     * @Rest\Get("/api/generiques", name="generique_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The generique to search for."

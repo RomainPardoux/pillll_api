@@ -14,7 +14,7 @@ class AsmrController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/asmrs/{id}",
+     *     path = "/api/asmrs/{id}",
      *     name = "asmr_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class AsmrController extends Controller
     }
 
     /**
-     * @Rest\Get("/asmrs", name="asmr_list")
+     * @Rest\Get("/api/asmrs", name="asmr_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The asmr to search for."

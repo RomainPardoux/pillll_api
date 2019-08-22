@@ -14,7 +14,7 @@ class SmrController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/smrs/{id}",
+     *     path = "/api/smrs/{id}",
      *     name = "smr_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class SmrController extends Controller
     }
 
     /**
-     * @Rest\Get("/smrs", name="smr_list")
+     * @Rest\Get("/api/smrs", name="smr_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The smr to search for."

@@ -12,7 +12,7 @@ class LienCtController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/lienCts/{codeDossierHas}",
+     *     path = "/api/lienCts/{codeDossierHas}",
      *     name = "lienCt_show",
      * )
      * @Rest\View

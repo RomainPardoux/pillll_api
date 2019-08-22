@@ -14,7 +14,7 @@ class TitulaireSpecialiteController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/titulairesSpecialites/{id}",
+     *     path = "/api/titulairesSpecialites/{id}",
      *     name = "titulaireSpecialite_show",
      *     requirements = {"id"="\d+"}
      * )
@@ -26,7 +26,7 @@ class TitulaireSpecialiteController extends Controller
     }
 
     /**
-     * @Rest\Get("/titulairesSpecialites", name="titulaire_specialite_list")
+     * @Rest\Get("/api/titulairesSpecialites", name="titulaire_specialite_list")
      * @Rest\QueryParam(
      *     name="idCodeCis",
      *     description="The titulaire specialite to search for."

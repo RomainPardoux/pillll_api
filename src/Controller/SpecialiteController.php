@@ -14,7 +14,7 @@ class SpecialiteController extends Controller
 {
     /**
      * @Rest\Get(
-     *     path = "/specialites/{idCodeCis}",
+     *     path = "/api/specialites/{idCodeCis}",
      *     name = "specialite_show",
      *     requirements = {"idCodeCis"="\d+"}
      * )
@@ -26,7 +26,7 @@ class SpecialiteController extends Controller
     }
 
     /**
-     * @Rest\Get("/specialites", name="specialite_list")
+     * @Rest\Get("/api/specialites", name="specialite_list")
      * @Rest\QueryParam(
      *     name="denomination",
      *     description="The denomination to search for."
