@@ -9,5 +9,6 @@ fos_rest:
         serialize_null: true
     format_listener:
         rules:
-            - { path: '^/', priorities: ['json'], fallback_format: 'json' }
+            - { path: '^/api/doc', priorities: ['text/html', '*/*'], fallback_format: 'html' }
+            - { path: '^/api/', priorities: ['json'], fallback_format: 'json' }
     param_fetcher_listener: true
