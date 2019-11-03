@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pillll Api{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Pillll Api</h1>
+
+    Examples routes access to work api:
+
+
+    <h3>Presentations</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/presentations/1924">Presentation by id </a></code> : /presentations/(id)</li>
+        <li><code><a href="https://pillll.com/api/presentations/codecip7/2756239">Presentation by code cip 7</a></code> : /presentations/codecip13/(codeCip13)</li>
+        <li><code><a href="https://pillll.com/api/presentations/codecip13/3400927562396">Presentation by code cip 13</a></code> : /presentations/codecip13/(codeCip13)</li>
+        <li><code><a href="https://pillll.com/api/presentations?idCodeCis=60904643">Presentations by code cis</a></code> : /presentations?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Specialites</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/specialites/60904643">Specialite with id Code Cis </a></code> : /specialites/(idCodeCis)</li>
+        <li><code><a href="https://pillll.com/api/specialites?denomination=doliprane">Specialites with denomination name</a></code> : /specialites?denomination=(denomination)</li>
+    </ul>
+
+    <h3>Compositions</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/compositions/1">Composition by id </a></code> : /compositions/(id)</li>
+        <li><code><a href="https://pillll.com/api/compositions?idCodeCis=60904643">Compositions by id code cis</a></code> : /compositions?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+        <h3>Condition Prescription</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/conditionsPrescriptions/1">conditionsPrescriptions by id </a></code> : /conditionsPrescriptions/(id)</li>
+        <li><code><a href="https://pillll.com/api/conditionsPrescriptions?idCodeCis=60904643">conditionsPrescriptions by id code cis</a></code> : /conditionsPrescriptions?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Asmr</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/asmrs/1">Asmr by id </a></code> : /asmrs/(id)</li>
+        <li><code><a href="https://pillll.com/api/asmrs?idCodeCis=60904643">Asmr by id code cis</a></code> : /asmrs?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Smr</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/smrs/1">Smr by id </a></code> : /smrs/(id)</li>
+        <li><code><a href="https://pillll.com/api/smrs?idCodeCis=60904643">Smr by id code cis</a></code> : /smrs?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Infos Importantes</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/infosImportantes/1">Infos importantes by id </a></code> : /infosImportantes/(id)</li>
+        <li><code><a href="https://pillll.com/api/infosImportantes?idCodeCis=60904643">Infos importantes by id code cis</a></code> : /infosImportantes?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Generiques</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/generiques/1">Generique by id </a></code> : /generiques/(id)</li>
+        <li><code><a href="https://pillll.com/api/generiques?idCodeCis=60904643">Generiques by id code cis</a></code> : /generiques?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Titulaires Specialites</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/titulairesSpecialites/1">Titulaires Specialites by id </a></code> : /titulairesSpecialites/(id)</li>
+        <li><code><a href="https://pillll.com/api/titulairesSpecialites?idCodeCis=60904643">Titulaires Specialites by id code cis</a></code> : /titulairesSpecialites?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Voies Administrations</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/voiesAdministrations/1">Voies Administrations by id </a></code> : /voiesAdministrations/(id)</li>
+        <li><code><a href="https://pillll.com/api/voiesAdministrations?idCodeCis=60904643">Voies Administrations by id code cis</a></code> : /voiesAdministrations?idCodeCis=(idCodeCis)</li>
+    </ul>
+
+    <h3>Lien Cts</h3>
+    <ul>
+        <li><code><a href="https://pillll.com/api/lienCts/CT-17146">Lien Cts by code Has </a></code> : /lienCts/(codeHas)</li>
+    </ul>
+
+</div>
+{% endblock %}
